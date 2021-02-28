@@ -19,7 +19,7 @@ typedef struct {
 }Food;
 
 const char SNAKE_HEAD_CHAR = 'H';
-const char SNAKE_CHAR = 'S';
+const char SNAKE_CHAR = 'O';
 const char FOOD_CHAR = 'F';
 
 enum direction { 
@@ -218,7 +218,7 @@ void printField() {
 				printw("  ");
 			}
 			else if ( field[i][j] == -1 ) {
-				printw("S ");
+				printw("O ");
 			}
 			else if ( field[i][j] == 1 ) {
 				printw("F ");
